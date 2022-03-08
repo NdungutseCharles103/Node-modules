@@ -1,0 +1,26 @@
+./mongo
+
+touch .bash_profile
+vim .bash_profile
+press i
+alias mongo="/c/Program\ Files/MongoDB/Server/5.0/bin/mongo.exe"
+
+insert:
+db.user.insert({username: "smith"})
+
+update:
+db.user.update({username: "smith"}, {$set: {country: "Canada"}}
+
+view data:
+db.user.find()
+db.user.find().pretty()
+
+delete:
+db.user.remove({username: "smith"}
+
+info db:
+show collections
+db.stats()
+
+start project:crude:
+npm install express morgan nodemon ejs body-parser dotenv mongoose axios
